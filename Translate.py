@@ -7,7 +7,6 @@ class Translate():
         self.dna_string = dna_string
         self.codon = Codon.Codon()
 
-
     def find_methionine(self, rna_string):
         for i in range(2, len(rna_string)):
             if Codon.Codon().codon_table[rna_string[i-2:i+1]] == "M":
